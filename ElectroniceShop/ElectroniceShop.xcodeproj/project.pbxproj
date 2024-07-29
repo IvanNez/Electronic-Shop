@@ -45,6 +45,7 @@
 		54AD39AE2C57B67A0012A4DE /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD39AD2C57B67A0012A4DE /* CartView.swift */; };
 		54D63B542C57BA77006BA600 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D63B532C57BA77006BA600 /* ProductCardView.swift */; };
 		54D63B562C57BED7006BA600 /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D63B552C57BED7006BA600 /* CardImageView.swift */; };
+		54D63B5C2C57C2AF006BA600 /* Extension+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D63B5B2C57C2AF006BA600 /* Extension+Text.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		54AD39AD2C57B67A0012A4DE /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		54D63B532C57BA77006BA600 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
 		54D63B552C57BED7006BA600 /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
+		54D63B5B2C57C2AF006BA600 /* Extension+Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Text.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,13 +121,10 @@
 		54AD395F2C5779C80012A4DE /* ElectroniceShop */ = {
 			isa = PBXGroup;
 			children = (
-				54AD39602C5779C80012A4DE /* ElectroniceShopApp.swift */,
-				54AD39622C5779C80012A4DE /* MainView.swift */,
-				54D63B532C57BA77006BA600 /* ProductCardView.swift */,
-				54D63B552C57BED7006BA600 /* CardImageView.swift */,
-				54AD39AB2C57B66D0012A4DE /* FavouritesView.swift */,
-				54AD39AD2C57B67A0012A4DE /* CartView.swift */,
-				54AD39A92C578D080012A4DE /* Product.swift */,
+				54D63B5A2C57C291006BA600 /* App */,
+				54D63B592C57C28B006BA600 /* Model */,
+				54D63B582C57C288006BA600 /* View */,
+				54D63B572C57C27C006BA600 /* Extensions */,
 				54AD39642C5779C90012A4DE /* Assets.xcassets */,
 				54AD396E2C5789460012A4DE /* GoogleService-Info.plist */,
 				54AD39662C5779C90012A4DE /* Preview Content */,
@@ -139,6 +138,42 @@
 				54AD39672C5779C90012A4DE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		54D63B572C57C27C006BA600 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				54D63B5B2C57C2AF006BA600 /* Extension+Text.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		54D63B582C57C288006BA600 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54AD39622C5779C80012A4DE /* MainView.swift */,
+				54D63B532C57BA77006BA600 /* ProductCardView.swift */,
+				54D63B552C57BED7006BA600 /* CardImageView.swift */,
+				54AD39AB2C57B66D0012A4DE /* FavouritesView.swift */,
+				54AD39AD2C57B67A0012A4DE /* CartView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54D63B592C57C28B006BA600 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54AD39A92C578D080012A4DE /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54D63B5A2C57C291006BA600 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				54AD39602C5779C80012A4DE /* ElectroniceShopApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +284,7 @@
 				54AD39AE2C57B67A0012A4DE /* CartView.swift in Sources */,
 				54D63B562C57BED7006BA600 /* CardImageView.swift in Sources */,
 				54AD39632C5779C80012A4DE /* MainView.swift in Sources */,
+				54D63B5C2C57C2AF006BA600 /* Extension+Text.swift in Sources */,
 				54AD39612C5779C80012A4DE /* ElectroniceShopApp.swift in Sources */,
 				54AD39AC2C57B66D0012A4DE /* FavouritesView.swift in Sources */,
 				54AD39AA2C578D080012A4DE /* Product.swift in Sources */,
