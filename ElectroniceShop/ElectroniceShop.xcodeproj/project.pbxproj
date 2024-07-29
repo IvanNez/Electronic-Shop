@@ -41,6 +41,10 @@
 		54AD39A62C578AF70012A4DE /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 54AD39A52C578AF70012A4DE /* FirebaseStorageCombine-Community */; };
 		54AD39A82C578AF70012A4DE /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = 54AD39A72C578AF70012A4DE /* FirebaseVertexAI-Preview */; };
 		54AD39AA2C578D080012A4DE /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD39A92C578D080012A4DE /* Product.swift */; };
+		54AD39AC2C57B66D0012A4DE /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD39AB2C57B66D0012A4DE /* FavouritesView.swift */; };
+		54AD39AE2C57B67A0012A4DE /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD39AD2C57B67A0012A4DE /* CartView.swift */; };
+		54D63B542C57BA77006BA600 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D63B532C57BA77006BA600 /* ProductCardView.swift */; };
+		54D63B562C57BED7006BA600 /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D63B552C57BED7006BA600 /* CardImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +55,10 @@
 		54AD39672C5779C90012A4DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		54AD396E2C5789460012A4DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		54AD39A92C578D080012A4DE /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		54AD39AB2C57B66D0012A4DE /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
+		54AD39AD2C57B67A0012A4DE /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		54D63B532C57BA77006BA600 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
+		54D63B552C57BED7006BA600 /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,10 @@
 			children = (
 				54AD39602C5779C80012A4DE /* ElectroniceShopApp.swift */,
 				54AD39622C5779C80012A4DE /* MainView.swift */,
+				54D63B532C57BA77006BA600 /* ProductCardView.swift */,
+				54D63B552C57BED7006BA600 /* CardImageView.swift */,
+				54AD39AB2C57B66D0012A4DE /* FavouritesView.swift */,
+				54AD39AD2C57B67A0012A4DE /* CartView.swift */,
 				54AD39A92C578D080012A4DE /* Product.swift */,
 				54AD39642C5779C90012A4DE /* Assets.xcassets */,
 				54AD396E2C5789460012A4DE /* GoogleService-Info.plist */,
@@ -233,8 +245,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54D63B542C57BA77006BA600 /* ProductCardView.swift in Sources */,
+				54AD39AE2C57B67A0012A4DE /* CartView.swift in Sources */,
+				54D63B562C57BED7006BA600 /* CardImageView.swift in Sources */,
 				54AD39632C5779C80012A4DE /* MainView.swift in Sources */,
 				54AD39612C5779C80012A4DE /* ElectroniceShopApp.swift in Sources */,
+				54AD39AC2C57B66D0012A4DE /* FavouritesView.swift in Sources */,
 				54AD39AA2C578D080012A4DE /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
