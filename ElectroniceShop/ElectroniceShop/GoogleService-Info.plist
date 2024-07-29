@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyD_ADmPy6bpV4dkcUy0r4fr9BG289ExNeQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>128795477058</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.nezgovorov.ElectroniceShop</string>
+	<key>PROJECT_ID</key>
+	<string>electronicshop-5ae0c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>electronicshop-5ae0c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:128795477058:ios:5efcecc3f71cc4be77d9db</string>
+</dict>
+</plist>
