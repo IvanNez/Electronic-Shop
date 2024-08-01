@@ -23,9 +23,12 @@ struct MainView: View {
                     }
                 }
             }
+            .padding(.horizontal, 10)
+            .background(.secondary.opacity(0.3))
+            .shadow(color: .black.opacity(0.2), radius: 8, x: 5, y: 8)
             
             
-            // MARK: Nav bar
+            // MARK: Navigation var
             .navigationTitle("Products")
             .toolbar {
                 // left button

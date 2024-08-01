@@ -122,8 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				54D63B5A2C57C291006BA600 /* App */,
+				54D908732C5BA3F300DCC2FA /* Views */,
+				54D908742C5BA3F900DCC2FA /* ViewModel */,
 				54D63B592C57C28B006BA600 /* Model */,
-				54D63B582C57C288006BA600 /* View */,
 				54D63B572C57C27C006BA600 /* Extensions */,
 				54AD39642C5779C90012A4DE /* Assets.xcassets */,
 				54AD396E2C5789460012A4DE /* GoogleService-Info.plist */,
@@ -152,10 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				54AD39622C5779C80012A4DE /* MainView.swift */,
-				54D63B532C57BA77006BA600 /* ProductCardView.swift */,
-				54D63B552C57BED7006BA600 /* CardImageView.swift */,
-				54AD39AB2C57B66D0012A4DE /* FavouritesView.swift */,
-				54AD39AD2C57B67A0012A4DE /* CartView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,6 +171,73 @@
 				54AD39602C5779C80012A4DE /* ElectroniceShopApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		54D9086C2C5BA38800DCC2FA /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				54D9086D2C5BA39100DCC2FA /* Subview */,
+				54D63B582C57C288006BA600 /* View */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		54D9086D2C5BA39100DCC2FA /* Subview */ = {
+			isa = PBXGroup;
+			children = (
+				54D63B532C57BA77006BA600 /* ProductCardView.swift */,
+				54D63B552C57BED7006BA600 /* CardImageView.swift */,
+			);
+			path = Subview;
+			sourceTree = "<group>";
+		};
+		54D9086E2C5BA3AB00DCC2FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54AD39AB2C57B66D0012A4DE /* FavouritesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54D9086F2C5BA3B200DCC2FA /* FavouritesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				54D9086E2C5BA3AB00DCC2FA /* View */,
+			);
+			path = FavouritesScreen;
+			sourceTree = "<group>";
+		};
+		54D908702C5BA3CF00DCC2FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54AD39AD2C57B67A0012A4DE /* CartView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54D908712C5BA3D400DCC2FA /* CartScreen */ = {
+			isa = PBXGroup;
+			children = (
+				54D908702C5BA3CF00DCC2FA /* View */,
+			);
+			path = CartScreen;
+			sourceTree = "<group>";
+		};
+		54D908732C5BA3F300DCC2FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				54D9086C2C5BA38800DCC2FA /* MainScreen */,
+				54D9086F2C5BA3B200DCC2FA /* FavouritesScreen */,
+				54D908712C5BA3D400DCC2FA /* CartScreen */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		54D908742C5BA3F900DCC2FA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
