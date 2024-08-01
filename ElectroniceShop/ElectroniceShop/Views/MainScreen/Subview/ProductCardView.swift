@@ -50,8 +50,7 @@ struct ProductCardView: View {
             }
         }
         .frame(height: UIScreen.main.bounds.width * 0.7)
-        .background(.background.opacity(0.5))
-        .padding(10)
+       
     }
 }
 
