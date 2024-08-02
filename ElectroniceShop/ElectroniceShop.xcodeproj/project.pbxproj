@@ -46,6 +46,7 @@
 		54D63B542C57BA77006BA600 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D63B532C57BA77006BA600 /* ProductCardView.swift */; };
 		54D63B562C57BED7006BA600 /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D63B552C57BED7006BA600 /* CardImageView.swift */; };
 		54D63B5C2C57C2AF006BA600 /* Extension+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D63B5B2C57C2AF006BA600 /* Extension+Text.swift */; };
+		54D9087D2C5CCE2500DCC2FA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D9087C2C5CCE2500DCC2FA /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		54D63B532C57BA77006BA600 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
 		54D63B552C57BED7006BA600 /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
 		54D63B5B2C57C2AF006BA600 /* Extension+Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Text.swift"; sourceTree = "<group>"; };
+		54D9087C2C5CCE2500DCC2FA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 		54D908742C5BA3F900DCC2FA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				54D9087C2C5CCE2500DCC2FA /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54D63B542C57BA77006BA600 /* ProductCardView.swift in Sources */,
+				54D9087D2C5CCE2500DCC2FA /* ViewModel.swift in Sources */,
 				54AD39AE2C57B67A0012A4DE /* CartView.swift in Sources */,
 				54D63B562C57BED7006BA600 /* CardImageView.swift in Sources */,
 				54AD39632C5779C80012A4DE /* MainView.swift in Sources */,

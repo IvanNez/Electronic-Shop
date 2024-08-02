@@ -22,9 +22,12 @@ struct FavouritesView: View {
                     NavigationLink(destination: EmptyView()) {
                         ProductCardView(product: item)
                     }
+                    .buttonStyle(.plain)
                 }
             }
         }
+        .padding(.horizontal, 10)
+        .background(.secondary.opacity(0.3))
         .navigationTitle("Favourites")
     }
 }
