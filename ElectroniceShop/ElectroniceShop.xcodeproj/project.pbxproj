@@ -52,6 +52,7 @@
 		54D908872C5CD7B500DCC2FA /* DetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D908862C5CD7B500DCC2FA /* DetailInfoView.swift */; };
 		54D9088A2C5CD96D00DCC2FA /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D908892C5CD96D00DCC2FA /* ProductRow.swift */; };
 		54D9088C2C5CDDAB00DCC2FA /* RemoteControlRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D9088B2C5CDDAB00DCC2FA /* RemoteControlRowView.swift */; };
+		54D9088E2C5CE26000DCC2FA /* CustomMainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D9088D2C5CE26000DCC2FA /* CustomMainButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		54D908862C5CD7B500DCC2FA /* DetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoView.swift; sourceTree = "<group>"; };
 		54D908892C5CD96D00DCC2FA /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		54D9088B2C5CDDAB00DCC2FA /* RemoteControlRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlRowView.swift; sourceTree = "<group>"; };
+		54D9088D2C5CE26000DCC2FA /* CustomMainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMainButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				54D908832C5CD68100DCC2FA /* BackButtonView.swift */,
+				54D9088D2C5CE26000DCC2FA /* CustomMainButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				54D908872C5CD7B500DCC2FA /* DetailInfoView.swift in Sources */,
 				54D9088A2C5CD96D00DCC2FA /* ProductRow.swift in Sources */,
 				54D9088C2C5CDDAB00DCC2FA /* RemoteControlRowView.swift in Sources */,
+				54D9088E2C5CE26000DCC2FA /* CustomMainButton.swift in Sources */,
 				54AD39632C5779C80012A4DE /* MainView.swift in Sources */,
 				54D63B5C2C57C2AF006BA600 /* Extension+Text.swift in Sources */,
 				54AD39612C5779C80012A4DE /* ElectroniceShopApp.swift in Sources */,

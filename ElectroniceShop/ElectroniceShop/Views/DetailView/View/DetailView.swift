@@ -10,7 +10,8 @@ import SwiftUI
 struct DetailView: View {
     
     let product: Product
-    
+    @EnvironmentObject var viewModel: ViewModel
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         ZStack(alignment: .topLeading)
          {
@@ -21,7 +22,9 @@ struct DetailView: View {
                         .ignoresSafeArea()
                 }
                 
-                DetailInfoView(product: product)
+                DetailInfoView(product: product) {
+                    dismiss()
+                }
             }
             .background(.secondary.opacity(0.3))
             .navigationBarBackButtonHidden()
@@ -37,6 +40,7 @@ struct DetailView: View {
                                 image: "https://firebasestorage.googleapis.com/v0/b/electronicshop-5ae0c.appspot.com/o/products%2Fiphone15.jpeg?alt=media&token=e8e13761-3df9-408a-a1d8-4e0fd3114c44",
                                 price: 999,
                                 isFavourite: false))
+    .environmentObject(ViewModel())
 }
 
 

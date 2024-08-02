@@ -10,6 +10,8 @@ import SwiftUI
 struct DetailInfoView: View {
     
     let product: Product
+    @EnvironmentObject var viewModel: ViewModel
+    let action: () -> ()
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20 ){
@@ -28,18 +30,11 @@ struct DetailInfoView: View {
             
             Spacer()
             
-            Button {
-                // action
-            } label: {
-                Text("Add to cart")
-                    .frame(maxWidth: .infinity)
-                    .fontWeight(.bold)
-                    .foregroundStyle(.white)
-                    .padding()
-                    .background(.black)
-                    .clipShape(Capsule())
-                    .shadow(color: .black.opacity(0.3), radius: 10, x: 5, y: 8)
-            }
+            CustomMainButton(title: "Add to cart", action: {
+                viewModel.addToCart(product: product)
+                action()
+            })
+            
         }
         .padding(.horizontal, 30)
     }

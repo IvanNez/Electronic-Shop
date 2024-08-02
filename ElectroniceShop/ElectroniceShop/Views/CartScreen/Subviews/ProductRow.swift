@@ -36,7 +36,7 @@ struct ProductRow: View {
         }
         .shadow(color: .black.opacity(0.3), radius: 7, x: 5, y: 4)
         .padding(.horizontal, 10)
-        .background(.secondary.opacity(0.3))
+        
     }
 }
 
