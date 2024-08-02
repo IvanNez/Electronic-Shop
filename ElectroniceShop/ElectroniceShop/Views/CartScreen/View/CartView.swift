@@ -6,11 +6,19 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
+import FirebaseFirestoreSwift
 
 struct CartView: View {
+    
+    @FirestoreQuery(collectionPath: "shop",
+                    predicates: [.isEqualTo("isFavourite", true )]) private var favouritesItems: [Product]
+    
     var body: some View {
         VStack {
-            
+            ScrollView(.vertical, showsIndicators: false) {
+                
+            }
         }
         .navigationTitle("Cart")
     }
