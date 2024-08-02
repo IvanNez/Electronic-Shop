@@ -18,10 +18,14 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @main
 struct ElectroniceShopApp: App {
+    
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject var viewModel = ViewModel()
+    
     var body: some Scene {
         WindowGroup {
             MainView()
+                .environmentObject(viewModel)
         }
     }
 }
