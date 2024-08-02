@@ -26,7 +26,7 @@ struct ProductCardView: View {
                         Button {
                             viewModel.toggleFavourite(product: product)
                         } label: {
-                            Image(systemName: "heart.fill")
+                            Image(systemName: "cart.fill")
                                 .padding(10)
                                 .foregroundColor(product.isFavourite ? .red: .white)
                                 .background(.black.opacity(0.2))
@@ -51,11 +51,10 @@ struct ProductCardView: View {
             }
         }
         .frame(height: UIScreen.main.bounds.width * 0.7)
-       
     }
 }
 
-#Preview {
-   MainView()
-        .environmentObject(ViewModel())
-}
+//#Preview {
+//   MainView()
+//        .environmentObject(ViewModel())
+//}

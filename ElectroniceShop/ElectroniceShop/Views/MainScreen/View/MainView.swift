@@ -14,6 +14,7 @@ struct MainView: View {
     @EnvironmentObject var viewModel: ViewModel
     @FirestoreQuery(collectionPath: "shop") var items: [Product]
     var columns = Array(repeating: GridItem(), count: 2)
+    let hPadding: CGFloat = 10
     
     var body: some View {
         NavigationStack {
@@ -27,19 +28,18 @@ struct MainView: View {
                     }
                 }
             }
-            .padding(.horizontal, 10)
+            .padding(.horizontal, hPadding)
             .background(.secondary.opacity(0.3))
             .shadow(color: .black.opacity(0.2), radius: 8, x: 5, y: 8)
             
             
-            // MARK: Navigation var
-            .navigationTitle("Products")
+            // MARK: Navigation bar
+            .navigationTitle(Helper.Title.products)
             .toolbar {
                 // left button
                 ToolbarItem(placement: .topBarLeading) {
                     NavigationLink(destination: FavouritesView()) {
-                        Image(systemName: "heart.fill")
-                            .font(.title2)
+                        FavouritesButton()
                     }
                     .buttonStyle(.plain)
                 }
@@ -48,8 +48,7 @@ struct MainView: View {
                 // right button
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink(destination: CartView()) {
-                        Image(systemName: "cart.fill")
-                            .font(.title2)
+                        CartButton(numberOfProducts: viewModel.cartItemCount)
                     }
                     .buttonStyle(.plain)
                 }

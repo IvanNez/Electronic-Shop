@@ -12,9 +12,9 @@ struct DetailInfoView: View {
     let product: Product
     @EnvironmentObject var viewModel: ViewModel
     let action: () -> ()
-    
+
     var body: some View {
-        VStack(alignment: .leading, spacing: 20 ){
+        VStack(alignment: .leading, spacing: 20){
             HStack {
                 Text(product.name)
                     .titleFont()

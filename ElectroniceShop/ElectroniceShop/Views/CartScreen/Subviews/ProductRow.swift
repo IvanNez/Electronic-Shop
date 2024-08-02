@@ -22,7 +22,10 @@ struct ProductRow: View {
                 VStack(alignment: .leading, spacing: 20) {
                     Text(product.name)
                     
-                    Text("$\(product.price)")
+                    if let quantityInCart = product.quantityInCart {
+                        Text("$\(product.price * quantityInCart)")
+                    }
+                   
                 }
                 
                 Spacer()

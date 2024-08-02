@@ -12,6 +12,8 @@ import FirebaseFirestoreSwift
 struct CartView: View {
     
     @FirestoreQuery(collectionPath: "shop") private var items: [Product]
+    @EnvironmentObject var viewModel: ViewModel
+    
     
     var body: some View {
         VStack {
@@ -21,7 +23,7 @@ struct CartView: View {
                 }
             }
             
-            Text("Total: \(items.count)")
+            Text("Total: \(viewModel.totalPrice)")
                 .titleFont()
                 .padding(.bottom, 20)
             CustomMainButton(title: "Buy") {
@@ -29,11 +31,12 @@ struct CartView: View {
             }
             .padding(.horizontal, 30)
         }
-        .navigationTitle("Cart")
+        .navigationTitle(Helper.Title.cart)
         .background(.secondary.opacity(0.3))
     }
 }
 
 #Preview {
     CartView()
+        .environmentObject(ViewModel())
 }

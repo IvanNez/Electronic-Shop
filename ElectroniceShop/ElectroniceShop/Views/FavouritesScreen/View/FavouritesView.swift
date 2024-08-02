@@ -14,6 +14,7 @@ struct FavouritesView: View {
     @FirestoreQuery(collectionPath: "shop",
                     predicates: [.isEqualTo("isFavourite", true )]) private var favouritesItems: [Product]
     var columns = Array(repeating: GridItem(), count: 2)
+    let hPadding: CGFloat = 10
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -26,9 +27,9 @@ struct FavouritesView: View {
                 }
             }
         }
-        .padding(.horizontal, 10)
+        .padding(.horizontal, hPadding)
         .background(.secondary.opacity(0.3))
-        .navigationTitle("Favourites")
+        .navigationTitle(Helper.Title.favourites)
     }
 }
 

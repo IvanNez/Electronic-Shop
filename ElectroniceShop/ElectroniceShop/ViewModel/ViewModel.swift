@@ -12,6 +12,36 @@ import FirebaseFirestore
 final class ViewModel: ObservableObject {
     
     private let db = Firestore.firestore().collection("shop")
+    @Published var cartItems: [Product] = []
+    
+    var cartItemCount: Int {
+        cartItems.filter({ $0.quantityInCart ?? 0 > 0}).count
+    }
+    
+    var totalPrice: Int {
+        cartItems.reduce(0) { total, item in
+            total + (item.price * (item.quantityInCart ?? 0))
+        }
+    }
+    
+    init() {
+        fetchItems()
+    }
+    
+    private func fetchItems() {
+        db.addSnapshotListener { snapshot, error in
+            if let error = error {
+                print("Error fetching documents: \(error.localizedDescription)")
+            } else {
+                self.cartItems = snapshot?.documents.compactMap { document in
+                    try? document.data(as: Product.self)
+                } ?? []
+                print("Fetched items: \(self.cartItems.count)")
+            }
+        }
+    }
+    
+    
     
     func toggleFavourite(product: Product) {
         updateItem(product, data: ["isFavourite": !product.isFavourite])
