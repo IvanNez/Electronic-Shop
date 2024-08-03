@@ -36,7 +36,6 @@ final class ViewModel: ObservableObject {
                 self.cartItems = snapshot?.documents.compactMap { document in
                     try? document.data(as: Product.self)
                 } ?? []
-                print("Fetched items: \(self.cartItems.count)")
             }
         }
     }

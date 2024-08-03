@@ -30,7 +30,7 @@ struct DetailInfoView: View {
             
             Spacer()
             
-            CustomMainButton(title: "Add to cart", action: {
+            CustomMainButton(title: String(localized: "Add_To_Cart"), action: {
                 viewModel.addToCart(product: product)
                 action()
             })
