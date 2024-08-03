@@ -23,10 +23,10 @@ struct CartView: View {
                 }
             }
             
-            Text("Total: \(viewModel.totalPrice)")
+            Text("\(String(localized: "Total")): \(viewModel.totalPrice)")
                 .titleFont()
                 .padding(.bottom, 20)
-            CustomMainButton(title: "Buy") {
+            CustomMainButton(title: String(localized: "Buy")) {
                 
             }
             .padding(.horizontal, 30)

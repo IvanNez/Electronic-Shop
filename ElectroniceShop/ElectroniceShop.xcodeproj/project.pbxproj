@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5406B1922C5DD14E00F9A8DF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 5406B1912C5DD14E00F9A8DF /* Localizable.xcstrings */; };
 		54AD39612C5779C80012A4DE /* ElectroniceShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD39602C5779C80012A4DE /* ElectroniceShopApp.swift */; };
 		54AD39632C5779C80012A4DE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD39622C5779C80012A4DE /* MainView.swift */; };
 		54AD39652C5779C90012A4DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54AD39642C5779C90012A4DE /* Assets.xcassets */; };
@@ -60,6 +61,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5406B1902C5DC7DE00F9A8DF /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		5406B1912C5DD14E00F9A8DF /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		54AD395D2C5779C80012A4DE /* ElectroniceShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectroniceShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AD39602C5779C80012A4DE /* ElectroniceShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroniceShopApp.swift; sourceTree = "<group>"; };
 		54AD39622C5779C80012A4DE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -151,7 +154,9 @@
 				54D908822C5CD66F00DCC2FA /* Components */,
 				54D908982C5CF12600DCC2FA /* Helper */,
 				54AD39642C5779C90012A4DE /* Assets.xcassets */,
+				5406B1912C5DD14E00F9A8DF /* Localizable.xcstrings */,
 				54AD396E2C5789460012A4DE /* GoogleService-Info.plist */,
+				5406B1902C5DC7DE00F9A8DF /* PrivacyInfo.xcprivacy */,
 				54AD39662C5779C90012A4DE /* Preview Content */,
 			);
 			path = ElectroniceShop;
@@ -393,6 +398,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 54AD39542C5779C80012A4DE;
 			packageReferences = (
@@ -414,6 +420,7 @@
 			files = (
 				54AD39682C5779C90012A4DE /* Preview Assets.xcassets in Resources */,
 				54AD39652C5779C90012A4DE /* Assets.xcassets in Resources */,
+				5406B1922C5DD14E00F9A8DF /* Localizable.xcstrings in Resources */,
 				54AD396F2C5789460012A4DE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,7 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -559,7 +566,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -580,6 +587,8 @@
 				DEVELOPMENT_TEAM = 9W625278YK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Electronic shop";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -590,7 +599,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nezgovorov.ElectroniceShop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nezgovorov.ElectronicShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -613,6 +622,8 @@
 				DEVELOPMENT_TEAM = 9W625278YK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Electronic shop";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -623,7 +634,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nezgovorov.ElectroniceShop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nezgovorov.ElectronicShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

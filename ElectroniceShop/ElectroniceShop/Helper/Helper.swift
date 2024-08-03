@@ -9,9 +9,9 @@ import Foundation
 
 enum Helper {
     enum Title {
-        static let products = "Products"
-        static let favourites = "Favourites"
-        static let cart = "Cart"
+        static let products = String(localized: "Products")
+        static let favourites = String(localized: "Favourites")
+        static let cart = String(localized: "Cart")
         
     }
     
@@ -28,7 +28,7 @@ enum Helper {
     }
     
     enum Button {
-        static let buy = "Buy"
+        static let buy = String(localized: "Buy")
         static let cancel = "xmark.circle.fill"
         static let minus = "minus.rectangle.fill"
         static let plus = "plus.rectangle.fill"
